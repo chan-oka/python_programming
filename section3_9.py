@@ -1,0 +1,6 @@
+print('Mile')
+print('Hi', 'Mile')
+print('Hi', 'Mile', sep=',')
+print('Hi', 'Mile', sep=',', end='')
+print('Hi', 'Mile', sep=',', end='\n')
+print('Hi', 'Mile', sep=',', end='.\n')
