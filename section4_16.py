@@ -234,3 +234,73 @@ print(zzz)
 
 zzz = dict([('a', 10), ('b', 20)])
 print(zzz)
+
+d = {'x': 20, 'y': 30}
+print(d.keys())
+print(d.values())
+
+d2 = {'x': 1000, 'j': 500}
+d.update(d2)
+print(d)
+
+print(d.get('x'))
+print(d.get('z'))
+print(type(d.get('z')))
+
+print('x' in d2)
+print('zz' in d2)
+
+x = {'a': 1}
+y = x
+y['a'] = 1000
+print(x)
+print(y)
+
+x = {'a': 1}
+y = x.copy()
+y['a'] = 1000
+print(x)
+print(y)
+
+fruits = {
+    'apple': 100,
+    'banana': 200,
+    'orange': 300
+}
+print(fruits['apple'])
+
+a = {1, 1, 2, 2, 3, 4, 4, 4, 5, 6}
+print(a)
+
+b = {2, 3, 3, 6, 7}
+print(b)
+
+print(a - b)
+print(b - a)
+print(a & b)
+print(a | b)
+print(a ^ b)
+
+s = {1, 2, 3, 4, 5}
+s.add(6)
+print(s)
+
+s = {1, 2, 3, 4, 5}
+s.add(6)
+print(s)
+
+s.remove(6)
+print(s)
+s.clear()
+print(s)
+
+my_friends = {'A', 'C', 'D'}
+a_friends = {'B', 'D', 'E', 'F'}
+print(my_friends & a_friends)
+
+f = {'apple', 'banana', 'apple', 'banana'}
+kind = set(f)
+print(f)
+print(kind)
+print(type(f))
+print(type(kind))
