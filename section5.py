@@ -227,3 +227,253 @@ for word in ['My', 'Name', 'is', 'Mike']:
     print(word)
 else:
     print('Done')
+
+# num_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# for i in num_list:
+#     print(i)
+
+for i in range(10):
+    print(i)
+
+for i in range(2, 10):
+    print(i)
+
+for i in range(2, 10, 3):
+    print(i)
+
+for _ in range(10):
+    print('hello')
+
+for fruit in ['apple', 'banana', 'orange']:
+    print(fruit)
+
+for i, fruit in enumerate(['apple', 'banana', 'orange']):
+    print(i, fruit)
+
+days = ['Mon', 'Tue', 'Wed']
+fruits = ['apple', 'banana', 'orange']
+drinks = ['coffee', 'tea', 'beer']
+
+for i in range(len(days)):
+    print(days[i], fruits[i], drinks[i])
+
+for day, fruit, drink in zip(days, fruits, drinks):
+    print(day, fruit, drink)
+
+d = {'x': 100, 'y': 200}
+for v in d:
+    print(v)
+
+print(d.items())
+for k, v in d.items():
+    print(k, v)
+
+def say_something():
+    print('hi')
+    s = 'hi'
+    return s
+say_something()
+print(type(say_something))
+f = say_something
+f()
+result = say_something()
+print(result)
+
+def what_is_this(color):
+    print(color)
+what_is_this('white')
+
+def what_is_this(color):
+    if color == 'red':
+        return 'tomato'
+    elif color == 'green':
+        return 'green pepper'
+    else:
+        return 'I dont know'
+result = what_is_this('red')
+print(result)
+
+def add_num(a: int, b: int) -> int:
+    return a + b
+result = add_num(10, 20)
+print(result)
+result = add_num('a', 'b')
+print(result)
+
+def menu(entree):
+    print(entree)
+menu('beef')
+
+def menu(entree, drink, dessert):
+    print(entree)
+    print(drink)
+    print(dessert)
+
+menu('beef', 'beer', 'ice')
+menu(entree='beef', drink='beer', dessert='ice')
+menu('beef', drink='beer', dessert='ice')
+
+def menu(entree='beef', drink='wine', dessert='ice'):
+    print(entree)
+    print(drink)
+    print(dessert)
+menu()
+menu(entree='chicken', dessert='cake')
+menu('chicken', dessert='cake')
+
+def test_func(x, l=[]):
+    l.append(x)
+    return l
+
+y = [1, 2, 3]
+r = test_func(100, y)
+print(r)
+
+y = [1, 2, 3]
+r = test_func(200, y)
+print(r)
+
+r = test_func(100)
+print(r)
+
+r = test_func(100)
+print(r)
+
+def test_func(x, l=None):
+    if l is None:
+        l = []
+    l.append(x)
+    return l
+r = test_func(100)
+print(r)
+
+r = test_func(100)
+print(r)
+
+def say_something(*args):
+    print(args)
+    for arg in args:
+        print(arg)
+say_something('aaa', 'bbbb', 'cccc')
+
+def say_something(word, *args):
+    print(word)
+    for arg in args:
+        print(arg)
+say_something('aaa', 'arg', 'arg')
+t = ('Mike', 'Nancy')
+say_something('aaa', *t)
+say_something('aaa', *('Mike', 'Nancy'))
+
+def menu(**kwargs):
+    print(kwargs)
+menu(entree='beef', drink='coffee')
+
+def menu(**kwargs):
+    for k, v in kwargs.items():
+        print(k, v)
+d = {
+    'entree': 'beef',
+    'drink': 'ice coffe',
+    'dessert': 'ice'
+}
+menu(**d)
+
+def menu(food, *args, **kwargs):
+    print(food)
+    print(args)
+    print(kwargs)
+
+menu('banana', 'apple', 'orange', entree='beef', drink='coffe')
+
+def outer(a, b):
+    def plus(c, b):
+        return c + b
+    r1 = plus(a, b)
+    r2 = plus(b, a)
+    return r1 + r2
+print(outer(1, 2))
+
+def outer(a, b):
+    def inner():
+        return a + b
+    return inner
+
+f = outer(3, 3)
+print(f)
+print(f())
+
+def circle_area_func(pi):
+    def circle_area(radius):
+        return pi * radius * radius
+    return circle_area
+
+cal1 = circle_area_func(3.14)
+cal2 = circle_area_func(3.141592)
+
+print(cal1(10))
+print(cal2(10))
+
+def print_inf(func):
+    def wrapper(*args, **kwargs):
+        print('start')
+        result = func(*args, **kwargs)
+        print('end')
+        return result
+    return wrapper
+
+def add_num(a, b):
+    return a + b
+
+f = print_inf(add_num)
+r = f(10, 20)
+print(r)
+
+def print_more(func):
+    def wrapper(*args, **kwargs):
+        print('func:', func.__name__)
+        print('args:', args)
+        print('kwargs:', kwargs)
+        result = func(*args, **kwargs)
+        print('result:', result)
+        return result
+    return wrapper
+
+def print_info(func):
+    def wrapper(*args, **kwargs):
+        print('start')
+        result = func(*args, **kwargs)
+        print('end')
+        return result
+    return wrapper
+
+@print_info
+@print_more
+def add_num(a, b):
+    return a + b
+
+r = add_num(10, 20)
+print(r)
+
+l = ['Mon', 'tue', 'Wed', 'Thu', 'fri', 'sat', 'Sun']
+def change_words(words, func):
+    for word in words:
+        print(func(word))
+
+def sample_func(word):
+    return word.capitalize()
+
+change_words(l, sample_func)
+
+
+def change_words(words, func):
+    for word in words:
+        print(func(word))
+
+sample_func = lambda word:word.capitalize()
+# def sample_func(word):
+#     return word.capitalize()
+
+change_words(l, sample_func)
+change_words(l, lambda word:word.capitalize())
+change_words(l, lambda word:word.lower())
