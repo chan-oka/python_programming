@@ -477,3 +477,82 @@ sample_func = lambda word:word.capitalize()
 change_words(l, sample_func)
 change_words(l, lambda word:word.capitalize())
 change_words(l, lambda word:word.lower())
+
+l = ['Good morning', 'Goog afternoon', 'Good night']
+
+for i in l:
+    print(i)
+
+def greeting():
+    yield 'Good morning'
+    yield 'Goog afternoon'
+    yield 'Good night'
+
+for i in greeting():
+    print(i)
+
+g = greeting()
+print(next(g))
+print(next(g))
+
+def counter(num=1):
+    for _ in range(num):
+        yield 'run'
+
+c = counter()
+
+print(next(c))
+
+t = (1, 2, 3, 4)
+
+r = []
+for i in t:
+    if i % 2 == 0:
+        r.append(i)
+print(r)
+
+r = []
+r = [i for i in t if i % 2 == 0]
+print(r)
+
+t2 = (5, 6, 7, 8)
+r = []
+for i in t:
+    for j in t2:
+        r.append(i * j)
+print(r)
+
+r = [i * j for i in t for j in t2]
+print(r)
+
+w = ['1', '2', '3']
+f = ['4', '5', '6']
+
+d = {}
+for x, y in zip(w, f):
+    d[x] = y
+
+print(d)
+
+d = {x: y for x, y in zip(w, f)}
+print(d)
+
+s = set()
+
+for i in range(10):
+    if i % 2 == 0:
+        s.add(i)
+print(s)
+
+s = {i for i in range(10) if i % 2 == 0}
+print(s)
+
+def g():
+    for i in range(10):
+        yield i
+g = g()
+
+g = {i for i in range(10) if i % 2 == 0}
+
+for x in g:
+    print(x)
