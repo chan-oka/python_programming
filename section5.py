@@ -556,3 +556,80 @@ g = {i for i in range(10) if i % 2 == 0}
 
 for x in g:
     print(x)
+
+animal = 'cat'
+
+def f():
+    """test func doc"""
+    global animal
+    animal = 'dog'
+    local = 'aaa'
+    print('local', animal)
+    print('local', locals())
+    print(f.__name__)
+    print(f.__doc__)
+f()
+print('global:', animal)
+print('global:', globals())
+print('global:', __name__)
+
+l = [1, 2, 3]
+i = 5
+
+try:
+    l[i]
+except IndexError as exc:
+    print('Dont worry: {}'.format(exc))
+
+del l
+try:
+    l[i]
+except NameError as exc:
+    print('NameError: {}'.format(exc))
+except IndexError as exc:
+    print('Dont worry: {}'.format(exc))
+
+l = [1, 2, 3]
+try:
+    () + l
+except NameError as exc:
+    print('NameError: {}'.format(exc))
+except IndexError as exc:
+    print('Dont worry: {}'.format(exc))
+except Exception as exc:
+    print('Exception: {}'.format(exc))
+finally:
+    # exceptに入らない、正常系の場合でも実行
+    print('finally')
+
+l = [1, 2, 3]
+try:
+    l[0]
+except NameError as exc:
+    print('NameError: {}'.format(exc))
+except IndexError as exc:
+    print('Dont worry: {}'.format(exc))
+except Exception as exc:
+    print('Exception: {}'.format(exc))
+else:
+    # 正常系の場合に実行
+    print('else')
+finally:
+    # exceptに入らない、正常系の場合でも実行
+    print('finally')
+
+# raise IndexError('test IndexError')
+
+class UppercaseError(Exception):
+    pass
+
+def check():
+    words = ['banana', 'APPLE', 'orange']
+    for word in words:
+        if word.isupper():
+            raise UppercaseError(word)
+
+try:
+    check()
+except UppercaseError as exc:
+    print("UppercaseError {}".format(exc))

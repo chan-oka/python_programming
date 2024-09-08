@@ -5,6 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad191807-4519-4b69-b579-f7cd53487ce4" name="変更" comment="">
+      <change afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_package/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_package/talk/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_package/talk/animal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_package/talk/human.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_package/tools/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_package/tools/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/section6.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/section7.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/section5.py" beforeDir="false" afterPath="$PROJECT_DIR$/section5.py" afterDir="false" />
     </list>
@@ -16,6 +26,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Setup Script" />
         <option value="Python Script" />
       </list>
     </option>
@@ -41,12 +52,17 @@
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/daisaku.okada/python_programming/python_programming"
+    "last_opened_file_path": "/Users/daisaku.okada/python_programming/python_programming",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/lesson_package/talk" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lesson_package/tools" />
     </key>
   </component>
   <component name="RunManager">
@@ -64,7 +80,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/section5.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/section7.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
