@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad191807-4519-4b69-b579-f7cd53487ce4" name="変更" comment="">
-      <change afterPath="$PROJECT_DIR$/section11.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/section12.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/section9.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/section13.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/section13_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_flask.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Setup Script" />
+        <option value="HTML File" />
         <option value="Python Script" />
       </list>
     </option>
@@ -39,11 +41,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "Python.go.executor": "Run",
     "Python.lesson.executor": "Run",
     "Python.main.executor": "Run",
     "Python.section11.executor": "Run",
     "Python.section12.executor": "Run",
+    "Python.section13.executor": "Run",
+    "Python.section13_2.executor": "Run",
+    "Python.test_flask.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/daisaku.okada/python_programming/python_programming",
@@ -74,7 +80,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/section11.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_flask.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -83,6 +89,37 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="section13" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python_programming" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/section13.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.go" />
+      <item itemvalue="Python.section13" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.section13" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
