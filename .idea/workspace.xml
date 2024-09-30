@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad191807-4519-4b69-b579-f7cd53487ce4" name="変更" comment="">
-      <change afterPath="$PROJECT_DIR$/section13.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/section13_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/hello.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_flask.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/salary.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/section14_dogtest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/section14_unittest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_calculation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_calculation2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_salary.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +45,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
+    "Python テスト.Doctests (section14_dogtest 内).executor": "Run",
+    "Python テスト.Python テスト (test_calculation2.py 内).executor": "Run",
+    "Python テスト.Python テスト (test_salary.py 内).executor": "Run",
+    "Python テスト.pytest (test_calculation2.py 内).executor": "Run",
+    "Python テスト.pytest (test_calculation_pytest.py 内).executor": "Run",
+    "Python テスト.pytest.executor": "Run",
+    "Python テスト.unittest.executor": "Run",
     "Python.go.executor": "Run",
     "Python.lesson.executor": "Run",
     "Python.main.executor": "Run",
@@ -53,7 +63,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/daisaku.okada/python_programming/python_programming",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -111,9 +121,46 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest" type="tests" factoryName="py.test">
+      <module name="python_programming" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.9 (python_programming)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_calculation2.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="unittest" type="tests" factoryName="Unittests">
+      <module name="python_programming" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/.venv/bin/python" />
+      <option name="SDK_NAME" value="Python 3.9 (python_programming)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_calculation.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.go" />
       <item itemvalue="Python.section13" />
+      <item itemvalue="Python テスト.unittest" />
+      <item itemvalue="Python テスト.pytest" />
     </list>
     <recent_temporary>
       <list>
